@@ -1,0 +1,28 @@
+<!--Responsive navbar-->
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+        <a class="btn btn-outline large-case text-xl" href="/">Lego Collection</a>
+    </div>
+
+    <!--Responsive navbar on the right-->
+    <div class="navbar-center hidden sm:flex">
+        <ul class="menu menu-horizontal px-1">
+            <!-- <li><a href="/about">About</a></li> -->
+            <li><a class="<%= (page == "/about") ? 'active' : '' %>" href="/about">About</a></li>
+            <li>
+                <details>
+                    <summary>Lego Themes</summary>
+                    <ul class="p-2 bg-base-100 right-0"> 
+                        <!-- Theme links -->
+                        <!-- <li><a href="/lego/sets?theme=Technic">Technic</a></li> -->
+                        <li><a class="<%= (page == "/lego/sets") ? 'active' : '' %>" href="/lego/sets?theme=technic">Technic</a></li>
+                        <!-- <li><a href="/lego/sets?theme=Town">Town</a></li> -->
+                        <li><a class="<%= (page == "/lego/sets") ? 'active' : '' %>" href="/lego/sets?theme=Town">Town</a></li>
+                        <!-- <li><a href="/lego/sets?theme=Trains">Trains</a></li> -->
+                        <li><a class="<%= (page == "/lego/sets") ? 'active' : '' %>" href="/lego/sets?theme=Trains">Trains</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+</div>
